@@ -1,0 +1,44 @@
+
+/*Animating navbar bar3 on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.bars {
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+}
+.bars .line {
+  fill: none;
+  stroke: rgb(253, 251, 251);
+  stroke-width: 6;
+  stroke-linecap: square;
+  transition: stroke-dasharray 1000ms,  stroke-dashoffset 1000ms;
+}
+.bars .line.top {
+  stroke-dasharray: 40 172;
+}
+.bars .line.middle {
+  stroke-dasharray: 40 111;
+}
+.bars .line.bottom {
+  stroke-dasharray: 40 172;
+}
+.bars.active .top {
+  stroke-dashoffset: -132px;
+}
+.bars.active .middle {
+  stroke-dashoffset: -71px;
+}
+.bars.active .bottom {
+  stroke-dashoffset: -132px;
+}
+/* nanbar styles over   */

@@ -1,0 +1,215 @@
+*{ 
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #131417;
+}
+
+
+/*navbar */
+#navbarfl{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    -moz-backdrop-filter: blur( 9px );
+    position: fixed;
+    top: 0;
+    z-index: 6000;
+
+}
+
+
+/*navbar items*/
+#navbar-main-list{
+    padding-right:20px;
+}
+
+#navbar-list{
+    padding: 0px 3px 0px 8px;
+}
+
+#navbar-link{
+    padding-top: 0px;
+}
+
+#navbar-button{
+    padding-top: 0px;
+    color: rgb(216, 203, 203);
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    border-style: none;
+    height: 40px;
+    width:85px;
+}
+
+
+#navbar-button:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+
+#navbar-button-act{
+    padding-top: 0px;
+    color: white;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    border-style: none;
+    height: 40px;
+    width:85px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+
+/* parallax header */
+#down::before{
+    content:'';
+    position: absolute;
+    position: top;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom,#131417, transparent);
+    z-index: 4000;
+}
+
+#paralax{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;    
+}
+
+#paralax::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#131417, transparent);
+    z-index: 1000;
+}
+
+#paralax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#paralax img#front{
+    z-index: 10;
+}
+
+#text{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    z-index: 9;
+    font-weight: 900;
+    font-family: 'Tourney', cursive;
+
+}
+
+
+/* typing section */
+#type_set{
+    background: #131417;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Press Start 2P";
+
+}
+
+#type{
+    font-size: 40px;
+    color: white;
+    font-family: "Tourney";
+
+}
+
+
+/*  First level cards */
+#first_letter{
+  font-size: 50px;
+}
+
+#card-sect-title{
+  color:white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#flcard{
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    background: rgba(36, 27, 59, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    -moz-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 254, 254, 0.18);
+    min-width: 300px;
+}
+
+#flimg{
+    width: 75%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#fl-title{
+    font-family: 'Arvo', serif;
+    font-size: 3rem;
+}
+
+#fl-content{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.button-card{
+  background-color: rgb(223, 80, 80);
+  border-radius: 20px;
+  border: transparent;
+  font-size: 20px;
+ 
+}
+
+#b-card{
+  color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+#button-card-1{
+  background-color: #615ee9;
+}
+#button-card-2{
+  background-color: #4bf353;
+
+}
+#button-card-3{
+  background-color: #fc3b3b;
+  
+}
+
+#type_set{
+    color: red;
+}
